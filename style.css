@@ -15,8 +15,8 @@ body {
     justify-content: center;
     display:grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(100px, auto) repeat(5, 100px);
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: minmax(75px, auto) repeat(5, 80px);
     min-height: 100vh;
 
 }
@@ -25,7 +25,7 @@ body {
     cursor: pointer;
     font-size: 2rem;
     outline: none;
-    /* overflow: hidden; */
+    overflow: hidden;
     border-radius: 50%;
 
 }
