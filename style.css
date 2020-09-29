@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body {
+    background: linear-gradient(to right, #ffe53b, #ff005b);
+    
+}
+.calculator-grid{ 
+    align-content: center;
+    justify-content: center;
+    display:grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 100px);
+    min-height: 100vh;
+
+}
+.calculator-grid > button {
+    background: linear-gradient(145deg, #f9f7f8, #d2d0d1);
+    cursor: pointer;
+    font-size: 2rem;
+    outline: none;
+    /* overflow: hidden; */
+    border-radius: 50%;
+
+}
+.calculator-grid > button:hover {
+    background: #fba2a2;
+
+
+}
+.calculator-grid > .span-two {
+    grid-column: span 2;
+    border:1px solid black;
+    border-radius: 0;
+    
+}
+
+.calculator-grid > .span-two1{
+    grid-column: span 2;
+    border:1px solid black;
+    background: #97d7f2;
+    color: #000;
+    border-radius: 0;
+}
+.output{
+    grid-column: 1/ -1;
+    background: #ceeb89;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output > .previous-operand{
+    color: #828687;
+    font-size: 1.5rem;
+}
+.output > .current-operand{
+    color: #000000;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
